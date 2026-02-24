@@ -1,0 +1,7 @@
+Point = { x: number, y: number }
+Point.distance = (self, other) => (self.x - other.x) * (self.x - other.x) + (self.y - other.y) * (self.y - other.y)
+
+p = Point(x: 3, y: 4)
+q = Point(x: 0, y: 0)
+d = p.distance(q)
+print(d)

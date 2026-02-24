@@ -1,0 +1,10 @@
+-- Val pipeline + ML
+import "python:numpy" as np
+
+data = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+arr = np.array(data)
+result = data |> filter > 5 |> map * 2 |> sum
+print(result)
+
+np_sum = py_call(np, "sum", arr)
+print(np_sum)

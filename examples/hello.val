@@ -1,0 +1,22 @@
+import "math"
+import "io"
+
+name = "Val"
+age = 3
+ready = yes
+nums = 1, 2, 3, 4, 5
+
+double = x => x * 2
+add = (a, b) => a + b
+
+5 |> double |> + 3 |> print
+
+nums
+    |> filter > 2
+    |> map * 2
+    |> sum
+    |> print
+
+x = if ready then "go" else "stop"
+print(x)
+

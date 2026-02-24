@@ -1,0 +1,6 @@
+upper = s => s
+lower = s => s
+
+words = s => split(s, " ")
+csv = s => split(s, ",")
+

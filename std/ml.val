@@ -1,0 +1,11 @@
+-- ML standard library: numpy, torch, nn helpers
+-- Requires: pip install numpy torch
+
+tensor = array
+numpy = py_import("numpy")
+torch = py_import("torch")
+nn = py_import("torch.nn")
+
+linear = (in_features, out_features) => nn.Linear(in_features, out_features)
+relu = x => x.relu()
+mse_loss = (pred, target) => nn.functional.mse_loss(pred, target)

@@ -1,0 +1,8 @@
+greet = (name, prefix = "Hello") => "{prefix}, {name}!"
+print(greet("Val"))
+print(greet("Val", "Hi"))
+
+nums = 1, 2, 3, 4, 5
+print(3 in nums)
+print(10 in nums)
+print("a" in "Val")

@@ -1,0 +1,6 @@
+-- Basic numpy usage via py_import
+import "python:numpy" as np
+
+arr = array(1, 2, 3, 4, 5)
+print(arr)
+print(np.sum(arr))

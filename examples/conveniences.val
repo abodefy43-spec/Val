@@ -1,0 +1,6 @@
+import "io" as io
+
+nums = 1..10
+print(nums)
+
+print(1..5 |> sum)

@@ -1,0 +1,8 @@
+-- Simple PyTorch NN
+import "python:torch"
+import "python:torch.nn" as nn
+
+model = nn.Sequential(nn.Linear(10, 64), nn.ReLU(), nn.Linear(64, 1))
+x = torch.randn(32, 10)
+y = model(x)
+print(y.shape)

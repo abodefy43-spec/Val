@@ -1,0 +1,9 @@
+Point = { x: number, y: number }
+Point.distance = (self, other) => (self.x - other.x) * (self.x - other.x) + (self.y - other.y) * (self.y - other.y)
+
+Circle extends Point { r: number }
+
+c = Circle(x: 0, y: 0, r: 5)
+print(c.x)
+print(c.r)
+print(c.distance(Point(x: 3, y: 4)))

@@ -1,0 +1,11 @@
+-- sklearn wrappers for classical ML
+-- Requires: pip install scikit-learn
+
+import "python:sklearn.linear_model" as linear_model
+import "python:sklearn.model_selection" as model_selection
+import "python:sklearn.preprocessing" as preprocessing
+
+LinearRegression = linear_model.LinearRegression
+LogisticRegression = linear_model.LogisticRegression
+train_test_split = model_selection.train_test_split
+StandardScaler = preprocessing.StandardScaler

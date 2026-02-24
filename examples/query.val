@@ -1,0 +1,11 @@
+users = {
+    a: { name: "Ada", age: 21 },
+    b: { name: "Bob", age: 14 },
+    c: { name: "Cora", age: 31 }
+}
+
+people = values(users)
+
+from people where it.age >= 18 select it.name |> each |> print
+find numbers in 1, 2, 3, 4, 5 where it > 2 |> print
+

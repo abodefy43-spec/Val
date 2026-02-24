@@ -1,0 +1,6 @@
+println = value => print(value)
+
+read_text = path => read(path)
+
+write_text = (path, text) => write(path, text)
+

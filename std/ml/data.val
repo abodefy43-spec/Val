@@ -1,0 +1,4 @@
+-- Data loading and batching helpers
+
+batch = (data, size) => data
+shuffle = data => data

@@ -1,0 +1,11 @@
+Point = { x: number, y: number }
+p = Point(x: 5, y: 10)
+
+result = check p.x
+    when > 18 then "adult"
+    when > 12 then "teen"
+    default "child"
+
+print(type(p))
+print(result)
+

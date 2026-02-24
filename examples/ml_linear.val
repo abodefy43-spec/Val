@@ -1,0 +1,18 @@
+-- sklearn linear regression
+import "python:numpy" as np
+import "python:sklearn.linear_model" as linear_model
+import "python:sklearn.model_selection" as model_selection
+
+X = 1, 2, 3, 4, 5
+y = 3, 5, 7, 9, 11
+X_2d = np.array(X).reshape(-1, 1)
+
+split = model_selection.train_test_split(X_2d, y)
+X_train = split[0]
+X_test = split[1]
+y_train = split[2]
+y_test = split[3]
+model = linear_model.LinearRegression()
+model.fit(X_train, y_train)
+pred = model.predict(X_test)
+print(pred)
